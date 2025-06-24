@@ -1,35 +1,35 @@
-/* Variables de color basadas en tu logo */
 :root {
-  --color-primario: #2e7d32; /* Verde del logo */
-  --color-secundario: #81c784; /* Verde claro del logo */
-  --color-acento: #ff5252; /* Rojo acento, por ejemplo */
-  --color-footer: #333; /* Gris oscuro para footer */
+  --color-primario: #003466; /* Azul corporativo Sidetours */
+  --color-acento: #ffd100; /* Amarillo Sidetours */
+  --color-footer: #001d3a; /* Azul aún más oscuro para footer */
+  --color-texto: #ffffff; /* Blanco para textos */
 }
 
-/* Clases personalizadas */
+/* Header */
 .header-bg {
   background-color: var(--color-primario);
 }
 
 .header-text {
-  color: #fff;
+  color: var(--color-texto);
 }
 
 .header-link {
-  color: #fff;
+  color: var(--color-texto);
   text-decoration: none;
 }
 
 .header-link:hover {
-  text-decoration: underline;
+  color: var(--color-acento);
 }
 
+/* Footer */
 .footer-bg {
   background-color: var(--color-footer);
 }
 
 .footer-text {
-  color: #fff;
+  color: var(--color-texto);
 }
 
 .footer-acento {
