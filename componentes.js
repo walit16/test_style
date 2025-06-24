@@ -3,7 +3,7 @@
 function header() {
   return `
       <header>
-        <h1>Hola desde header()</h1>
+        <h1>header</h1>
         <nav>
           <a href="/">Inicio</a>
           <a href="/acerca">Acerca</a>
@@ -15,7 +15,7 @@ function header() {
 function footer() {
   return `
       <footer>
-        <p>Pie de página desde footer()</p>
+        <p>Footer</p>
       </footer>
     `;
 }
@@ -23,6 +23,4 @@ function footer() {
 window.Componentes = {
   headerHTML: header(),
   footerHTML: footer(),
-  headerFn: header, // si quieres exponer la función también
-  footerFn: footer,
 };
