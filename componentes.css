@@ -1,12 +1,29 @@
 :root {
-  --color-fondo-header: #e65b5b; /* Negro puro */
-  --color-fondo-footer: #cecece; /* Gris muy oscuro */
+  --color-fondo-header: #853535; /* Rojo oscuro */
+  --color-fondo-footer: #cecece; /* Gris claro */
   --color-texto-claro: #ffffff; /* Blanco */
-  --color-acento: #c21e2c; /* Rojo acento elegante */
+  --color-acento: #c21e2c; /* Rojo intenso */
   --color-link-hover: #ff6b6b; /* Rojo más claro al pasar el mouse */
 }
 
-/* Header */
+/* --- Layout base para toda la página --- */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content que empuja el footer abajo */
+main {
+  flex: 1;
+}
+
+/* --- Header --- */
 .header-bg {
   background-color: var(--color-fondo-header);
 }
@@ -26,7 +43,14 @@
   color: var(--color-link-hover);
 }
 
-/* Footer */
+/* Centrar nav y distribuir enlaces con espacio uniforme */
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* espacio entre enlaces */
+}
+
+/* --- Footer --- */
 .footer-bg {
   background-color: var(--color-fondo-footer);
 }

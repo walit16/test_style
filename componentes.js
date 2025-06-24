@@ -2,7 +2,7 @@ function header() {
   return `
     <header class="header-bg header-text p-6 text-center shadow-md">
       <h1 class="text-3xl font-extrabold tracking-wide uppercase">Sidetours</h1>
-      <nav class="mt-3 space-x-6">
+      <nav class="mt-3">
         <a href="/" class="header-link">Inicio</a>
         <a href="/acerca" class="header-link">Acerca</a>
         <a href="/contacto" class="header-link">Contacto</a>
