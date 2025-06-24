@@ -1,0 +1,89 @@
+:root {
+  --color-fondo-header: #853535; /* Rojo oscuro */
+  --color-fondo-footer: #cecece; /* Gris claro */
+  --color-texto-claro: #ffffff; /* Blanco */
+  --color-acento: #c21e2c; /* Rojo intenso */
+  --color-link-hover: #ff6b6b; /* Rojo más claro al pasar el mouse */
+}
+
+/* --- Layout base para toda la página --- */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content que empuja el footer abajo */
+main {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* --- Header --- */
+.header-bg {
+  background-color: var(--color-fondo-header);
+}
+
+.header-text {
+  color: var(--color-texto-claro);
+}
+
+.header {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.header-link {
+  color: var(--color-texto-claro);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-link:hover {
+  color: var(--color-link-hover);
+}
+
+/* --- Footer --- */
+.footer-bg {
+  background-color: var(--color-fondo-footer);
+}
+
+.footer-text {
+  color: var(--color-texto-claro);
+  font-weight: 400;
+}
+
+.footer-acento {
+  color: var(--color-acento);
+  font-weight: 600;
+}
+
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
