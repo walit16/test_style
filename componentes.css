@@ -1,8 +1,8 @@
 :root {
-  --color-fondo-header: #000000; /* Negro puro */
-  --color-fondo-footer: #1a1a1a; /* Gris muy oscuro */
+  --color-fondo-header: #e65b5b; /* Negro puro */
+  --color-fondo-footer: #cecece; /* Gris muy oscuro */
   --color-texto-claro: #ffffff; /* Blanco */
-  --color-acento: #e63946; /* Rojo acento elegante */
+  --color-acento: #c21e2c; /* Rojo acento elegante */
   --color-link-hover: #ff6b6b; /* Rojo más claro al pasar el mouse */
 }
 
