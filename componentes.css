@@ -1,37 +1,42 @@
 :root {
-  --color-primario: #003466; /* Azul corporativo Sidetours */
-  --color-acento: #ffd100; /* Amarillo Sidetours */
-  --color-footer: #001d3a; /* Azul aún más oscuro para footer */
-  --color-texto: #ffffff; /* Blanco para textos */
+  --color-fondo-header: #000000; /* Negro puro */
+  --color-fondo-footer: #1a1a1a; /* Gris muy oscuro */
+  --color-texto-claro: #ffffff; /* Blanco */
+  --color-acento: #e63946; /* Rojo acento elegante */
+  --color-link-hover: #ff6b6b; /* Rojo más claro al pasar el mouse */
 }
 
 /* Header */
 .header-bg {
-  background-color: var(--color-primario);
+  background-color: var(--color-fondo-header);
 }
 
 .header-text {
-  color: var(--color-texto);
+  color: var(--color-texto-claro);
 }
 
 .header-link {
-  color: var(--color-texto);
+  color: var(--color-texto-claro);
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .header-link:hover {
-  color: var(--color-acento);
+  color: var(--color-link-hover);
 }
 
 /* Footer */
 .footer-bg {
-  background-color: var(--color-footer);
+  background-color: var(--color-fondo-footer);
 }
 
 .footer-text {
-  color: var(--color-texto);
+  color: var(--color-texto-claro);
+  font-weight: 400;
 }
 
 .footer-acento {
   color: var(--color-acento);
+  font-weight: 600;
 }

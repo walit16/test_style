@@ -1,19 +1,21 @@
 function header() {
   return `
-    <header class="header-bg header-text p-5 text-center">
-      <h1 class="text-2xl font-bold">Sidetours</h1>
-      <nav class="mt-2 space-x-4">
+    <header class="header-bg header-text p-6 text-center shadow-md">
+      <h1 class="text-3xl font-extrabold tracking-wide uppercase">Sidetours</h1>
+      <nav class="mt-3 space-x-6">
         <a href="/" class="header-link">Inicio</a>
         <a href="/acerca" class="header-link">Acerca</a>
+        <a href="/contacto" class="header-link">Contacto</a>
       </nav>
     </header>
   `;
 }
 
 function footer() {
+  const year = new Date().getFullYear();
   return `
-    <footer class="footer-bg footer-text p-4 text-center text-sm mt-8">
-      <p class="footer-acento">© Sidetours</p>
+    <footer class="footer-bg footer-text p-5 text-center text-sm mt-10">
+      <p>© ${year} <span class="footer-acento">Sidetours</span>. Todos los derechos reservados.</p>
     </footer>
   `;
 }
