@@ -1,10 +1,10 @@
 function header() {
   return `
-    <header class="bg-green-600 text-white p-5 text-center">
-      <h1 class="text-2xl font-bold">header</h1>
+    <header class="header-bg header-text p-5 text-center">
+      <h1 class="text-2xl font-bold">Header</h1>
       <nav class="mt-2 space-x-4">
-        <a href="/" class="text-white hover:underline">Inicio</a>
-        <a href="/acerca" class="text-white hover:underline">Acerca</a>
+        <a href="/" class="header-link">Inicio</a>
+        <a href="/acerca" class="header-link">Acerca</a>
       </nav>
     </header>
   `;
@@ -12,8 +12,8 @@ function header() {
 
 function footer() {
   return `
-    <footer class="bg-gray-800 text-white p-4 text-center text-sm mt-8">
-      <p>Footer</p>
+    <footer class="footer-bg footer-text p-4 text-center text-sm mt-8">
+      <p class="footer-acento">Footer</p>
     </footer>
   `;
 }
